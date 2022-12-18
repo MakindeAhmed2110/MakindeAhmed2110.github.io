@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width" initial-scale="1">
+        <title>My zuri hng9 task 1</title>
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <style>
+            @import 'animate.css';
+            img{
+                border: 3px solid black;
+                border-radius: 310px;
+                margin-left: 270px;
+                margin-top: 40px;
+            }
+            .zuri{
+                margin-left: 40px;
+               font-weight: bolder;
+            }
+            .jumbotron{
+                width: 70%;
+            }
+            .create{
+                font-size: 25px;
+                font-family: arial expanded;
+                color: black;
+                margin-left: 40px;
+                margin-top: 150px;
+            }
+            .mal{
+                font-size: 15px;
+                font-family: arial expanded;
+            
+                margin-top: -10px; 
+            }
+            .status{
+                margin-top: 15px;
+                width:45%;
+                height: 60px;
+                border: 1px solid;
+                border-radius: 10px;  
+            }
+            .status::after{
+                border: 1px solid rgba(132, 132, 248, 0.575);
+            }
+            .inv{
+                width : 60%;
+                height: 60px;
+                border: 1px solid;
+                border-radius: 10px;
+                margin-left: 0;
+            }
+            .register{
+                color: white;
+                border: 0px solid;
+                border-radius: 20px;
+                height: 40px;
+                width:120px;
+                background-color: red;
+                float: right; margin-left: 100px; margin-top: -40px;
+                 margin-right: 190px;
+            }
+            .login{
+                color: white;
+                border: 0px solid;
+                border-radius: 20px;
+                height: 40px;
+                width:120px;
+                background-color: red;
+                margin-top: -40px; float:right; margin-right: 40px
+            }
+            .right{
+                float:right;
+                margin-right: 35%;
+            }
+            .sh{
+                float: right;
+            }
+            .reg{
+                float: right;
+                border : 0px solid;
+                border-radius: 20px;
+                width: 120px;
+                height: 40px;
+                background-color: red;
+                color: white;
+               
+                font-size: 16px;
+                
+                margin-top: -15px;
+            }
+            .by{
+                margin-left: 400px; 
+            }
+            .exquisite{
+                    font-family: Arial;
+                    text-align: center;
+                    font-weight: bolder;
+                    color: grey;
+                    font-size: 30px;
+                    margin-top: 30px;
+                }
+                .whatsapp{
+                    text-align: center;
+                    color: red;
+                    font-family: 'Courier New', Courier, monospace;
+                    font-stretch: extra-expanded;
+                    font-size: 20px;
+                }
+                .fa{
+                    font-size: 200px;
+                    margin-left: 50%;
+                    color:green;
+                } 
+                
+                marquee{
+                    font-size: 24px;
+                    font-family: Tahoma;
+                }
+            @media screen and (max-height:500px){
+                img{
+                border: 2px solid black;
+                border-radius: 310px;
+                 
+                 margin-left: 50% ;
+               }
+                .zuri{
+                    font-size: 25px;
+                    margin-left: 0px;
+                }
+                .status{
+                    width:45%;
+                    height: 60px;
+                    border: 1px solid;
+                    border-radius: 10px; 
+                    font-weight: bolder;
+                }
+                .jumbotron{
+                    width: 100%;
+                    margin-top:50px;
+                }
+                .register{
+                    color: white;
+                    border: 0px solid;
+                    border-radius: 20px;
+                    height: 40px;
+                    width:120px;
+                    background-color: red;
+                    float: right; 
+                    margin-left: 100px;
+                    margin-right: 130px;
+                 }
+                 .login{
+                    color: white;
+                    border: 0px solid;
+                    border-radius: 20px;
+                    height: 40px;
+                    width:120px;
+                    background-color: red;
+                    margin-top: -40px;
+                    float:right;
+                }
+                .bring{
+                    display:none;
+                }
+                .mal{
+                   text-align: center;
+                   color:red;
+               }
+               .create{
+                   margin-top: 200px;
+                   font-size: 28px;
+                   color: black;
+                   text-align:center;
+                }
+                .not{
+                    display: none;
+                }
+                .inv{
+                    width: 100%;
+                    margin-top: 20px;
+                }
+                .th{
+                    margin-top: 15px;
+                }
+                .sh{
+                    float: right;
+                    margin-top: 14px;
+                }
+                .left{
+                    text-align: left;
+                }
+                .age{
+                    margin-right: 35%;
+                }
+                .by{
+                    text-align: center;
+                }
+                .sre{
+                    margin-top: 10px;
+                }
+                .soft{
+                    font-size: 24px;
+                    font-weight: bold;
+                    font-family: arial expanded;
+                    
+                }
+                .exquisite{
+                    font-family: Arial;
+                    text-align: center;
+                    font-weight: bolder;
+                    color: grey;
+                    font-size: 30px;
+                    margin-top: 30px;
+                }
+                .whatsapp{
+                    text-align: center;
+                    color: red;
+                    font-family: 'Courier New', Courier, monospace;
+                    font-stretch: extra-expanded;
+                    font-size: 20px;
+                }
+                .fa{
+                    font-size: 200px;
+                    margin-left: 50%;
+                    color:green;
+                }
+                marquee{
+                    font-size: 24px;
+                    font-family: Tahoma;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <ul class="nav nav">
+                    <h1 class="zuri" onclick="window.alert(`This is just a static webpage, No action will take place`)">Welcome To Zuri Hng9 Landing Page</h1> 
+                        <button class="register" onclick="window.alert(`This is just a static webpage, No action will take place`)">REGISTER</button>
+                        <button class="login">LOGIN</button>
+                
+                    <h3 class="bring" style="margin-left: 120px; font-size: 20px; color: greenyellow; animation-name: slideInRight; animation-duration: 2s;">Bringing Developers Together</h3> 
+                   
+
+                </ul>
+            </nav>
+        </div>
+        <div class="container">
+           
+        <h4 class="create">CREATE YOUR ACCOUNT</h4>
+        <div class="mal" style="color: red; margin-left: 120px;">ALL FIELDS ARE REQUIRED</div>
+        <p><div class="not" style="color:rgba(65, 65, 150, 0.808); font-size: 20px;">Note:This workspace requires you to register with the same email address and<br> username as you have in your slack workspace</div></p>
+        <div class="landing">
+            <p>
+            <Div class="jumbotron" style="margin-top:40px">
+            <form>
+                <div class="left" style="margin-bottom:-10px;">First Name</div><div class="right">Last Name</div><br>
+                <input type="fname" id="fullname" class="status only th" >
+                <input type="lname" class="status now sh"><br>
+                
+                <div class="left mname" style="float: left">Middle Name</div><div class="right">Username</div><br>
+                <input type="Mname" class="status  mn th">
+                <input type="user" class="status sh"><br>
+                
+                <div class="left" style="float: left">Gender</div><div class="right" >Age</div><br>
+                <input type="gender" class="status th">
+                <input type="age" class="status sh"><br>
+
+                <div class="left" style="float:left; ">Track</div><div class="right">Experience</div><br>
+                <select name="COURSE" placeholder="Select A Track" CLASS="status th">
+                    <option value="SELECT A TRACK" id="html">Select A Track</option>
+                    <optgroup></optgroup>
+                    <option value="Front-End">Front-End</option>
+                    <option value="Back-End">Back-End</option> 
+                    <option value="UI/UX Design">UI/UX Design</option>
+                    <option value="Product Manager">Product Manager</option>
+                    <option value="software engineer">Mobile App Dev.</option>
+                 </select>
+                <input type="experience" class="status sh"><br>
+
+                <div class="left" style="float:left; ">Employment Status</div><div class="right">Education</div><br>
+                <input type="employ" class="status th">
+                <input type="" class="status sh"><br>
+                
+                <div class="left sre">Email Address</div>
+                <input type="" class="inv"><br>
+
+                <div class="left sre">Password</div>
+                <input type="" class="inv"><br>
+
+                <div class="left sre">Confirm Password</div>
+                <input type="" class="inv"><br>
+
+                <div class="left sre">How did you hear about us?</div>
+                <select name="COURSE" placeholder="Select A Track" CLASS="inv">
+                    <option value="SELECT" id="html">Select</option>
+                    <optgroup></optgroup>
+                    <option value="Twitter">Twitter</option>
+                    <option value="Zuri">Zuri</option> 
+                    <option value="HNG">HNG</option>
+                    <option value="Facebook">Facebook</option>
+                    <option value="Instagram">Instagram</option>
+                    <option value="Friends">Friends</option>
+                    <option value="Net">Internet</option>
+                 </select>
+             
+            </form>
+            <h5 style="text-align:left;"><a href="#"><u>Already Registered?</a></h5><button class="reg"  onclick="nameCheck()">REGISTER</button>
+            </Div>
+            </p> </div>
+
+        
+            <h4 class="by">By</h4>
+            <figure>
+                <img src="TOBILOBA.jpg" width="300px" height="300px">
+            </figure>
+            <div class="soft">Name: Makinde ahmed</div>
+            <div class="soft">Profession: Front-End Developer | Aspiring Backend Developer </div>
+        
+        <p>
+        <div class="exquisite">DO YOU WANT A LANDING PAGE LIKE THIS WHERE YOU CAN GET MORE INFO. FROM YOUR CUSTOMERS?</div>
+        <div class="whatsapp">Chat me up on Whatsapp</div>
+        <i class="fa fa-whatsapp fa-7x"><a href=""></a></i>
+        <marquee>Click on the whatsapp logo to continue chatting</marquee>
+        </p>
+    </div>
+        
+
+        <script>
+            function nameCheck(){
+                  var fullname = document.getElementById('fullname').value;
+    
+                  if(fullname === ""){
+                  alert("You submitted an empty form , please enter the information for the above details");
+                   }else{
+                   alert(`Thank you for inputting your name, ${fullname}`)
+        }           
+}
+        </script>
+    </body>
+</html>
